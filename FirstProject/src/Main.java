@@ -72,7 +72,7 @@ public class Main {
         System.out.println("Are you a student? (true/false)");
         boolean isStudent=scanner.nextBoolean();
         //nextInt(), nextDouble(), nextBoolean()
-        scanner.close(); //good practice to close at end else unexpected behavior.
+
         System.out.println("your college is "+college);
 
         if(isStudent){
@@ -81,5 +81,27 @@ public class Main {
         else{
             System.out.println("You are not a student!");
         }
+
+        // issue with scanner
+        System.out.println("Enter your age:");
+        age=scanner.nextInt();
+        scanner.nextLine(); //solution
+        System.out.println("Enter your favorite color: ");
+        String color=scanner.nextLine();
+
+        System.out.println("You are "+age+" years old");
+        System.out.println("You like the color "+color);
+        // Issue- The following is output:
+        /*
+        Enter your age:
+        25
+        Enter your favorite color:
+        You are 25 years old
+        You like the color
+        */
+        // when we type a number say 25 and hit enter, there is still a new line character because we hit enter
+        // the nextln method in color is picking up that \n as input=> color=\n
+
+        scanner.close(); //good practice to close at end else unexpected behavior.
     }
 }
