@@ -99,8 +99,19 @@ public class Main {
         You are 25 years old
         You like the color
         */
-        // when we type a number say 25 and hit enter, there is still a new line character because we hit enter
+        // when we type a number say 25 and hit enter, there is still a new line in buffer character because we hit enter
         // the nextln method in color is picking up that \n as input=> color=\n
+
+        // Calculate area of rectangle
+        double length=0;
+        double breadth=0;
+        double area=0;
+        System.out.println("Enter length: ");
+        length=scanner.nextDouble();
+        System.out.println("Enter breadth: ");
+        breadth=scanner.nextDouble();
+        area=length*breadth;
+        System.out.println("The area of the rectangle with length "+length+" and breadth "+breadth+" is "+ area +"cm^2");
 
         scanner.close(); //good practice to close at end else unexpected behavior.
     }
