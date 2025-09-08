@@ -40,26 +40,41 @@ public class Main {
 ////        random.nextDouble() generates random number between 0 and 1 (decimal number)
 ////        random.nextBoolean() can be used for situations like flipping a coin
 
-        //*****************************************************
+//        //*****************************************************
+//
+//        System.out.println(Math.PI);
+//        System.out.println(Math.E);
+//        double result;
+//
+//        result=Math.pow(2,3); //2^3
+//        result=Math.abs(-5); //5
+//        result=Math.sqrt(9); //3
+//        result=Math.round(3.14); // working with double => 3.0
+//        result=Math.ceil(3.14);
+//        result=Math.floor(3.99);
+//        result=Math.max(10,20);
+//        result=Math.min(10,20);
+//
+//        System.out.println(result);
+//
 
-        System.out.println(Math.PI);
-        System.out.println(Math.E);
-        double result;
+//
+//        //****************************************************
 
-        result=Math.pow(2,3); //2^3
-        result=Math.abs(-5); //5
-        result=Math.sqrt(9); //3
-        result=Math.round(3.14); // working with double => 3.0
-        result=Math.ceil(3.14);
-        result=Math.floor(3.99);
-        result=Math.max(10,20);
-        result=Math.min(10,20);
+        // Hypotenuse c=sqrt(a^2+b^2)
 
-        System.out.println(result);
+        double a;
+        double b;
+        double c;
+
+        System.out.print("Enter value of side A: ");
+        a=scanner.nextDouble();
+        System.out.print("Enter value of side B: ");
+        b=scanner.nextDouble();
+        c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+
+        System.out.println("The hypotenuse measures: "+c);
 
         scanner.close();
-
-
-
     }
 }
