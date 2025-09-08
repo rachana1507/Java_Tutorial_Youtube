@@ -21,24 +21,41 @@ public class Main {
 //            System.out.println("You are a child");
 //        }
 
-        //*******************************************
+        //*****************************************************
 
-        Random random= new Random();
-        int number1;
-        int number2;
-        int number3;
+//        Random random= new Random();
+//        int number1;
+//        int number2;
+//        int number3;
+//
+////        number=random.nextInt();// very large number
+//        number1=random.nextInt(1,7);
+//        System.out.println(number1);
+//
+//        number2=random.nextInt(1,7);
+//        System.out.println(number2);
+//
+//        number3=random.nextInt(1,7);
+//        System.out.println(number3);
+////        random.nextDouble() generates random number between 0 and 1 (decimal number)
+////        random.nextBoolean() can be used for situations like flipping a coin
 
-//        number=random.nextInt();// very large number
-        number1=random.nextInt(1,7);
-        System.out.println(number1);
+        //*****************************************************
 
-        number2=random.nextInt(1,7);
-        System.out.println(number2);
+        System.out.println(Math.PI);
+        System.out.println(Math.E);
+        double result;
 
-        number3=random.nextInt(1,7);
-        System.out.println(number3);
-//        random.nextDouble() generates random number between 0 and 1 (decimal number)
-//        random.nextBoolean() can be used for situations like flipping a coin
+        result=Math.pow(2,3); //2^3
+        result=Math.abs(-5); //5
+        result=Math.sqrt(9); //3
+        result=Math.round(3.14); // working with double => 3.0
+        result=Math.ceil(3.14);
+        result=Math.floor(3.99);
+        result=Math.max(10,20);
+        result=Math.min(10,20);
+
+        System.out.println(result);
 
         scanner.close();
 
