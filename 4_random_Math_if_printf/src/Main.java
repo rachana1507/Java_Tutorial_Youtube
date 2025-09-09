@@ -78,21 +78,38 @@ public class Main {
 
         // dimensions of a circle/sphere
 
-        double radius;
-        double circum;
-        double area;
-        double volume;
+//        double radius;
+//        double circum;
+//        double area;
+//        double volume;
+//
+//        System.out.print("Enter the radius : ");
+//        radius=scanner.nextDouble();
+//
+//        circum=2*Math.PI*radius;
+//        area=Math.PI*Math.pow(radius,2);
+//        volume=(4.0/3.0)*Math.PI*Math.pow(radius,3);
+//
+//        System.out.printf("Circumference: %.1f\n",circum);
+//        System.out.printf("Area: %.2f\n",area);
+//        System.out.printf("Volume: %.3f\n",volume);
 
-        System.out.print("Enter the radius : ");
-        radius=scanner.nextDouble();
+        //Printf
+        // %[flags][width][.precision][specifier-character]
 
-        circum=2*Math.PI*radius;
-        area=Math.PI*Math.pow(radius,2);
-        volume=(4.0/3.0)*Math.PI*Math.pow(radius,3);
+        String car="Mustang";
+        char firstLetter = 'M';
+        int age=2;
+        double height=-1.2;
+        boolean isCar=true;
 
-        System.out.printf("Circumference: %.1f\n",circum);
-        System.out.printf("Area: %.2f\n",area);
-        System.out.printf("Volume: %.3f\n",volume);
+        System.out.printf("Helo %s \n",car);
+        System.out.printf("Cars name starts with %c\n",firstLetter);
+        System.out.printf("It is %+d years old\n",age);
+        System.out.printf("Height is %+f\n",height);
+        System.out.printf("Car: %b\n",isCar);
+
+
 
         scanner.close();
 
