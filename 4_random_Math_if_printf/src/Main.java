@@ -62,19 +62,39 @@ public class Main {
 //        //****************************************************
 
         // Hypotenuse c=sqrt(a^2+b^2)
+//
+//        double a;
+//        double b;
+//        double c;
+//
+//        System.out.print("Enter value of side A: ");
+//        a=scanner.nextDouble();
+//        System.out.print("Enter value of side B: ");
+//        b=scanner.nextDouble();
+//        c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+//
+//        System.out.println("The hypotenuse measures: "+c);
+//
 
-        double a;
-        double b;
-        double c;
+        // dimensions of a circle/sphere
 
-        System.out.print("Enter value of side A: ");
-        a=scanner.nextDouble();
-        System.out.print("Enter value of side B: ");
-        b=scanner.nextDouble();
-        c=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
+        double radius;
+        double circum;
+        double area;
+        double volume;
 
-        System.out.println("The hypotenuse measures: "+c);
+        System.out.print("Enter the radius : ");
+        radius=scanner.nextDouble();
+
+        circum=2*Math.PI*radius;
+        area=Math.PI*Math.pow(radius,2);
+        volume=(4.0/3.0)*Math.PI*Math.pow(radius,3);
+
+        System.out.printf("Circumference: %.1f\n",circum);
+        System.out.printf("Area: %.2f\n",area);
+        System.out.printf("Volume: %.3f\n",volume);
 
         scanner.close();
+
     }
 }
