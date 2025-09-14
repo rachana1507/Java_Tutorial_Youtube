@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
         //Nested ifs
@@ -28,32 +30,49 @@ public class Main {
 //        System.out.printf("The price of a ticket is: $%.2f",price);
 
         //Strings
-        String name="Rachana Aithal";
-        int length=name.length();
-        char letter=name.charAt(8);
-        int index=name.indexOf("a",2);
-        int lastindex=name.lastIndexOf("a");
+//        String name="Rachana Aithal";
+//        int length=name.length();
+//        char letter=name.charAt(8);
+//        int index=name.indexOf("a",2);
+//        int lastindex=name.lastIndexOf("a");
+//
+//        System.out.println(name+length+" "+letter+index);
+//        System.out.println(name);
+//        System.out.println(lastindex);
+//
+//        name=name.toUpperCase();
+//        System.out.println(name);
+//        name=name.toLowerCase();
+//        System.out.println(name);
+//
+//        String trimmingstr="     hei na    ";
+//        System.out.println(trimmingstr);
+//        trimmingstr=trimmingstr.trim();
+//        System.out.println(trimmingstr);
+//
+//        trimmingstr=trimmingstr.replace("i","y");
+//        System.out.println(trimmingstr);
+//
+//        String check=" ";
+//        System.out.println(check.isEmpty());
 
-        System.out.println(name+length+" "+letter+index);
-        System.out.println(name);
-        System.out.println(lastindex);
+        //substrings - a method used to extract a portion of string
+        // str.substring(start,end);
 
-        name=name.toUpperCase();
-        System.out.println(name);
-        name=name.toLowerCase();
-        System.out.println(name);
+        Scanner scanner=new Scanner(System.in);
 
-        String trimmingstr="     hei na    ";
-        System.out.println(trimmingstr);
-        trimmingstr=trimmingstr.trim();
-        System.out.println(trimmingstr);
+        System.out.print("Enter your email: ");
+        String email=scanner.next();
 
-        trimmingstr=trimmingstr.replace("i","y");
-        System.out.println(trimmingstr);
+        if( email.contains("@")) {
+            String username = email.substring(0, email.indexOf("@"));
+            String domain = email.substring(email.indexOf("@") + 1);
+            System.out.println(username + " " + domain);
+        }
+        else{
+            System.out.println("Invalid email - must contain @");
+        }
 
-        String check=" ";
-        System.out.println(check.isEmpty());
-
-        
+        scanner.close();
     }
 }
