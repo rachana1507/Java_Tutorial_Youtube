@@ -24,15 +24,36 @@ public class Main {
         // break= break out of a loop (STOP)
         //continue= skip current iteration of a loop (SKIP)
 
-        for(int i=0; i<10; i++){
-            if(i==5){
-//                break;
-                continue;
+//        for(int i=0; i<10; i++){
+//            if(i==5){
+////                break;
+//                continue;
+//            }
+//            System.out.print(i+" ");
+//
+//        }
+
+        // MATRIX OF A SYMBOL
+
+        int rows;
+        int columns;
+        char symbol;
+
+        System.out.print("Enter number of rows: ");
+        rows=scanner.nextInt();
+
+        System.out.print("Enter number of columns: ");
+        columns=scanner.nextInt();
+
+        System.out.print("Enter symbol: ");
+        symbol=scanner.next().charAt(0);
+
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
+                System.out.print(symbol);
             }
-            System.out.print(i+" ");
-
+            System.out.println();
         }
-
         scanner.close();
     }
 }
