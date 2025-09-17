@@ -12,14 +12,26 @@ public class Main {
 
         Scanner scanner=new Scanner(System.in);
 
-        System.out.print("How many seconds to countdown from?: ");
-        int start=scanner.nextInt();
+//        System.out.print("How many seconds to countdown from?: ");
+//        int start=scanner.nextInt();
+//
+//        for(int i=start;i>0;i--){
+//            System.out.println(i);
+//            Thread.sleep(1000);
+//        }
+//        System.out.println("HAPPY NEW YEAR!!!");
 
-        for(int i=start;i>0;i--){
-            System.out.println(i);
-            Thread.sleep(1000);
+        // break= break out of a loop (STOP)
+        //continue= skip current iteration of a loop (SKIP)
+
+        for(int i=0; i<10; i++){
+            if(i==5){
+//                break;
+                continue;
+            }
+            System.out.print(i+" ");
+
         }
-        System.out.println("HAPPY NEW YEAR!!!");
 
         scanner.close();
     }
