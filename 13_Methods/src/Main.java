@@ -1,4 +1,7 @@
 public class Main {
+
+    static int x=3; //class scope
+
     public static void main(String[] args){
         // method- a block of reusable code that is executed when called ()
 //
@@ -17,13 +20,17 @@ public class Main {
         //Overloaded methods = methods that share the same name, but different parameters
         // signature = name + parameters
 
-        System.out.println(add(1,2,3));
+//        System.out.println(add(1,2,3));
+//
+//    }
+//    static double add(double a, double b){
+//        return a+b;
+//    }
+//    static double add(double a,double b, double c){
+//        return a+b+c;
 
-    }
-    static double add(double a, double b){
-        return a+b;
-    }
-    static double add(double a,double b, double c){
-        return a+b+c;
+
+        // variable scope = where a variable can be accessed
+        int x=4; //local scope
     }
 }
